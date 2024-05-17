@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.admin__header {
+  button {
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px;
+    svg {
+      font-size: 18px;
+    }
+  }
+}

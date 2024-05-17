@@ -1,0 +1,26 @@
+.create_user {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+    input {
+      padding: 14px 24px;
+      width: 400px;
+      border-radius: 8px;
+      border: 1px solid rgb(107, 107, 237);
+      &:focus {
+        box-shadow: 1px 1px 3px 1px rgb(89, 89, 234);
+      }
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: rgb(34, 209, 34);
+      color: #fff;
+    }
+  }
+}
