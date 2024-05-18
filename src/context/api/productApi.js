@@ -25,6 +25,11 @@ export const productApi = api.injectEndpoints({
       }),
       invalidatesTags: ["Product"],
     }),
+    getDetailProduct: build.query({
+      query: (id) => ({
+        url: `/products/${id}`,
+      }),
+    }),
     // getDetailProduct: build.query({
     //   query: (id) => ({
     //     url: `/products/${id}`,
@@ -37,4 +42,5 @@ export const {
   useGetProductsQuery,
   useDeleteProductsMutation,
   usePostproductsMutation,
+  useGetDetailProductQuery,
 } = productApi;

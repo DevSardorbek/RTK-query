@@ -9,16 +9,18 @@ const heartSlice = createSlice({
   initialState,
   reducers: {
     toggleHeart: (state, action) => {
-      let index = state.value.findIndex((i) => i._id === action.payload._id);
-      if (index < 0) {
-        state.value = [...state.value, action.payload];
+      const isInWishlist = state.value.some(
+        (el) => el.id === action.payload.id
+      );
+      if (isInWishlist) {
+        state.value = state.value.filter((el) => el.id !== action.payload.id);
       } else {
-        state.value = state.value.filter((i) => i._id !== action.payload._id);
+        state.value.push(action.payload);
       }
       localStorage.setItem("wishlist", JSON.stringify(state.value));
     },
   },
 });
 
-export const { addToHeart } = heartSlice.actions;
+export const { toggleHeart } = heartSlice.actions;
 export default heartSlice.reducer;

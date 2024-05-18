@@ -1,0 +1,71 @@
+.single_route {
+  margin-top: 185px;
+  .single_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 60%;
+      object-fit: cover;
+      margin: 0 auto;
+      border-radius: 12px;
+    }
+  }
+  .single_card_info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h1 {
+      font-family: Poppins;
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      color: #1d3444;
+    }
+    h2 {
+      color: #0d1317;
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 56px;
+      letter-spacing: -0.03em;
+      text-align: left;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;
+      color: #5b5b5b;
+    }
+    span {
+      font-family: Poppins;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #3bb77e;
+    }
+    .buy {
+      display: flex;
+      align-items: center;
+      gap: 44px;
+      button {
+        padding: 10px 36px;
+        border-radius: 13px;
+        background-color: rgb(209, 38, 38);
+        color: #fff;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

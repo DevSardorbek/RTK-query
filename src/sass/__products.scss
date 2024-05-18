@@ -6,6 +6,7 @@
     gap: 24px;
     flex-wrap: wrap;
     .products__card {
+      position: relative;
       width: 330px;
       // height: 450px;
       background-color: aliceblue;
@@ -32,6 +33,19 @@
       justify-content: center;
       margin-bottom: 20px;
       margin-top: 16px;
+      button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: transparent;
+        color: black;
+        button {
+          padding: 4px;
+        }
+        svg {
+          font-size: 20px;
+        }
+      }
     }
     img {
       width: 270px;

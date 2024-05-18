@@ -11,6 +11,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Users from "./pages/users/Users";
 import Wishlist from "./pages/wishlist/Wishlist";
+import Contact from "./pages/contact/Contact";
+import SingleRoute from "./components/singleRoute/SingleRoute";
 function App() {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith("/admin");
@@ -21,6 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/product/:id" element={<SingleRoute />} />
         <Route path="/users" element={<Users />} />
         <Route path="/admin" element={<Admin />}>
           <Route path="create-product" element={<CreateProduct />} />

@@ -1,7 +1,9 @@
 import React from "react";
 import "../../sass/__navbar.scss";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Navbar = () => {
+  let wishlist = useSelector((s) => s.heart.value);
   return (
     <div className="navbar__wrapper">
       <div className="container">
@@ -17,8 +19,11 @@ const Navbar = () => {
           <div className="navbar__links">
             <NavLink to={"/users"}>Users</NavLink>
             <NavLink to={"/admin"}>Admin</NavLink>
-            <a href="#">contact</a>
-            <NavLink to={"/wishlist"}>wishlist</NavLink>
+            <NavLink to={"/contact"}>Contact</NavLink>
+            <div className="wish">
+              <NavLink to={"/wishlist"}>Wishlist</NavLink>
+              <span>{wishlist.length}</span>
+            </div>
           </div>
         </div>
       </div>
