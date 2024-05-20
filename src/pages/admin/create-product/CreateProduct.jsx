@@ -22,7 +22,7 @@ const CreateProduct = () => {
   }, [isSuccess]); // Bu yerda isSuccess ni kuzatamiz
 
   const handleCreateProduct = (e) => {
-    e.preventDefault();
+      
     console.log(newProduct);
     createProduct(newProduct);
   };

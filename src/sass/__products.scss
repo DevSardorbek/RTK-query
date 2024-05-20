@@ -12,6 +12,11 @@
       background-color: aliceblue;
       border-radius: 12px;
       padding: 40px 20px;
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
       h2 {
         color: rgb(74, 74, 189);
       }
